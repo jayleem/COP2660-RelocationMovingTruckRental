@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD800"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/rentalMsg"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnTruckTen"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_marginTop="1dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/imgDesc"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/ten_ft_truck" />
+
+    <ImageButton
+        android:id="@+id/btnTruckTenSeven"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_marginTop="20dp"
+        android:background="#0000"
+        android:contentDescription="@string/imgDesc"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTruckTen"
+        app:srcCompat="@drawable/seventeen_ft_truck" />
+
+    <ImageButton
+        android:id="@+id/btnTruckTwoSix"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#0000"
+        android:contentDescription="@string/imgDesc"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTruckTenSeven"
+        app:srcCompat="@drawable/twentysix_ft_truck" />
+
+    <EditText
+        android:id="@+id/editTextMiles"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="@string/miles"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTruckTwoSix" />
+
+    <Button
+        android:id="@+id/btnGetPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/calcBtn"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMiles" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Rhino Truck Rental</string>
+    <string name="welcomeMsg">TAP TO CONTINUE</string>
+    <string name="imgDesc">image</string>
+    <string name="rentalMsg">Available Trucks</string>
+    <string name="miles">Miles</string>
+    <string name="calcBtn">GET RATE</string>
+</resources>
